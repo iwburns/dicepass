@@ -1,0 +1,7 @@
+[package]
+name = "dicepass"
+version = "0.1.0"
+authors = ["iwburns <iburns@quantumedgetechnology.com>"]
+
+[dependencies]
+rand = "0.4"
