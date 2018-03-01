@@ -22,7 +22,7 @@ bonnet siesta effects ebook fiddle molecule
 
 #### For more info:
 ```text
-$ dicepass --help
+$ ./dicepass --help
 dicepass 0.1.0
 Ian B. <iwburns8@gmail.com>
 Generate dice-ware style pass-phrases
@@ -35,7 +35,8 @@ FLAGS:
     -V, --version    Prints version information
 
 OPTIONS:
-    -f, --file <FILE>      The input file containing the word-list
-    -r, --rolls <ROLLS>    The number of dice rolls to generate a single word
-    -w, --words <WORDS>    The number of words in the generated pass-phrase
+    -f, --file <FILE>      Specifies the input file containing the word-list.
+    -r, --rolls <ROLLS>    Specifies the number of dice rolls to generate a single word.  This must match the format of
+                           the word-list file.
+    -w, --words <WORDS>    Specifies the number of words in the generated pass-phrase.
 ```
