@@ -1,16 +1,16 @@
-#dicepass
+# dicepass
 
 Generate "dice-ware"-style pass-phrases from the command line.
 
 This application is very much a work-in-progress.  Not intended for
 security sensitive applications (for now perhaps).
 
-###Build
+### Build
 ```text
 $ cargo build --release
 ```
 
-###Usage
+### Usage
 ```text
 $ cd target/release/
 $ dicepass -f path/to/wordlist.txt -w 6 -r 4
@@ -20,7 +20,7 @@ will yield a pass-phrase like:
 bonnet siesta effects ebook fiddle molecule
 ```
 
-####For more info:
+#### For more info:
 ```text
 $ dicepass --help
 dicepass 0.1.0
