@@ -43,7 +43,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 [[package]]
 name = "lib_dicepass_gen"
 version = "0.1.0"
-source = "git+https://github.com/iwburns/lib_dicepass_gen#5cd3cd54448ec9adb983d8c0ff5d2f822a1d7bd7"
+source = "git+https://github.com/iwburns/lib_dicepass_gen#50485ea4d7adf146d736433fea97a47da77a9c0e"
 dependencies = [
  "lazy_static 1.0.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "rand 0.4.2 (registry+https://github.com/rust-lang/crates.io-index)",

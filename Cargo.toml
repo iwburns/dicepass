@@ -4,7 +4,7 @@ version = "0.1.0"
 authors = ["iwburns <iburns@quantumedgetechnology.com>"]
 
 [dependencies]
-lib_dicepass_gen = { git = "https://github.com/iwburns/lib_dicepass_gen" }
+lib_dicepass_gen = { git = "https://github.com/iwburns/lib_dicepass_gen",  branch = "master" }
 
 [dependencies.clap]
 version = "~2.30.0"
