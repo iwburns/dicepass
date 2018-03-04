@@ -12,11 +12,16 @@ fn main() {
     let args = parse_args();
 
 //    let file_path = args.value_of("FILE").unwrap();
-    let num_words: u32 = args.value_of("WORDS").unwrap().parse().unwrap();
 //    let rolls_per_word: u32 = args.value_of("ROLLS").unwrap().parse().unwrap();
 
     let pg = PassphraseGenerator::new();
-    let passphrase = pg.generate_with_length(num_words);
+    let passphrase;
+
+    if let Some(num_words) = args.value_of("WORDS") {
+        passphrase = pg.generate_with_length(num_words.parse().unwrap());
+    } else {
+        passphrase = pg.generate();
+    }
 
     println!("{}", passphrase);
 }
@@ -36,7 +41,7 @@ fn parse_args<'a>() -> ArgMatches<'a> {
             .short("w")
             .long("words")
             .help("Specifies the number of words in the generated pass-phrase.")
-            .required(true)
+            .required(false)
             .takes_value(true)
             .validator(|words| {
                 if let Ok(_) = words.parse::<u32>() {
