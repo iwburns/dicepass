@@ -16,7 +16,7 @@ fn main() {
         WordCount::Default
     };
 
-    let pass_config = PassGenConfig::from_eff_short_2(word_count);
+    let pass_config = PassGenConfig::from_eff_long(word_count);
 
     println!("{}", generate(pass_config));
 }
