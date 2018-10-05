@@ -13,11 +13,11 @@ $ cargo build --release
 ### Usage
 ```text
 $ cd target/release/
-$ dicepass -f path/to/wordlist.txt -w 6 -r 4
+$ ./dicepass
 ```
 will yield a pass-phrase like:
 ```text
-bonnet siesta effects ebook fiddle molecule
+uniformly repeal pushpin shock plasma
 ```
 
 #### For more info:
@@ -28,15 +28,14 @@ Ian B. <iwburns8@gmail.com>
 Generate dice-ware style pass-phrases
 
 USAGE:
-    dicepass --file <FILE> --rolls <ROLLS> --words <WORDS>
+    dicepass [OPTIONS]
 
 FLAGS:
     -h, --help       Prints help information
     -V, --version    Prints version information
 
 OPTIONS:
-    -f, --file <FILE>      Specifies the input file containing the word-list.
-    -r, --rolls <ROLLS>    Specifies the number of dice rolls to generate a single word.  This must match the format of
-                           the word-list file.
+    -l, --list <LIST>      Specifies the word-list to use when generating the pass-phrase. [possible values: eff-long,
+                           eff-short, eff-short2]
     -w, --words <WORDS>    Specifies the number of words in the generated pass-phrase.
 ```
